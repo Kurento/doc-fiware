@@ -1,6 +1,8 @@
 # Makefile for Sphinx documentation
 #
 
+DOC_VERSION = 6.4.0
+
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
@@ -22,7 +24,7 @@ help:
 	@echo "  html       to make standalone HTML files"
 	@echo "  dist       to make langdoc html epub latexpdf and then copy"
 	@echo "             Kurento.{pdf,epub} in build/html and make a tgz"
-	@echo "             as kurento-docs.tgz"
+	@echo "             as kurento-docs-$(DOC_VERSION).tgz"
 	@echo "  dirhtml    to make HTML files named index.html in directories"
 	@echo "  singlehtml to make a single large HTML file"
 	@echo "  pickle     to make pickle files"
@@ -164,6 +166,6 @@ dist: langdoc html epub latexpdf
 	@echo "Packaging documentation"
 	@echo
 	cp $(BUILDDIR)/epub/FIWARE-Stream-Oriented-GE.epub $(BUILDDIR)/latex/FIWARE-Stream-Oriented-GE.pdf $(BUILDDIR)/html &&\
-	tar zcvf $(BUILDDIR)/dist/kurento-docs.tgz -C $(BUILDDIR)/html .
+	tar zcvf $(BUILDDIR)/dist/kurento-docs-$(DOC_VERSION).tgz -C $(BUILDDIR)/html .
 
 readthedocs:
