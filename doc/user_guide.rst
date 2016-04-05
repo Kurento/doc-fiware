@@ -1,5 +1,5 @@
 FIWARE Stream Oriented Generic Enabler - Programmers Guide
-__________________________________________________________
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Introduction
 ============
@@ -40,8 +40,8 @@ Basic Setup
 -----------
 
 First of all, developers must install Kurento Media Server. Please review the
-:doc:`installation guide <admin_guide>`. In short, KMS can be installed in an
-Ubuntu 14.04 machine as follows:
+:doc:`installation guide <admin_guide>`. In short, KMS |KMS_VERSION| can be
+installed in an Ubuntu 14.04 machine as follows:
 
 ::
 
@@ -86,7 +86,7 @@ in your `pom.xml`:
 	   <dependency>
 	      <groupId>org.kurento</groupId>
 	      <artifactId>kurento-client</artifactId>
-	      <version>6.4.0</version>
+	      <version>|CLIENT_JAVA_VERSION|</version>
 	   </dependency>
 	</dependencies>
 
@@ -168,7 +168,7 @@ in your `bower.json`:
 ::
 
 	"dependencies": {
-	   "kurento-client": "6.4.0",
+	   "kurento-client": "|CLIENT_JS_VERSION|",
 	}
 
 First, you need to create an instance of the `KurentoClient` class that will
@@ -357,7 +357,7 @@ in an Ubuntu machine, execute the following commands in the shell:
 
 	git clone https://github.com/Kurento/kurento-tutorial-java.git
 	cd kurento-tutorial-java/kurento-magic-mirror
-	git checkout 6.4.0
+	git checkout |TUTORIAL_JAVA_VERSION|
 	mvn compile exec:java
 
 The pre-requisites to run this Java demo are `Git <http://git-scm.com/>`__,
@@ -379,7 +379,7 @@ in an Ubuntu machine, execute the following commands in the shell:
 
 	git clone https://github.com/Kurento/kurento-tutorial-js.git
 	cd kurento-tutorial-js/kurento-magic-mirror
-	git checkout 6.2.1
+	git checkout |TUTORIAL_JS_VERSION|
 	bower install
 	http-server
 
@@ -404,7 +404,7 @@ in an Ubuntu machine, execute the following commands in the shell:
 
 	git clone https://github.com/Kurento/kurento-tutorial-node.git
 	cd kurento-tutorial-node/kurento-magic-mirror
-	git checkout 6.2.1
+	git checkout |TUTORIAL_NODE_VERSION|
 	npm install
 	npm start
 
@@ -435,7 +435,7 @@ More Examples
 There are another sample applications that can be used to learn how to use the
 *Stream Oriented GE Kurento*, namely:
 
-* `Hello-world <http://www.kurento.org/docs/current/tutorials.html#tutorial--hello-world>`__
+* `Hello-world <http://doc-kurento.readthedocs.org/en/stable/tutorials.html#hello-world>`__
   application. This is one of the simplest WebRTC application you can create
   with Kurento. It implements a WebRTC loopback (a WebRTC media stream going
   from client to Kurento and back to the client). You can check out the source
@@ -445,7 +445,7 @@ There are another sample applications that can be used to learn how to use the
   and
   `Node.js <https://github.com/Kurento/kurento-tutorial-node/tree/master/kurento-hello-world>`__.
 
-* `One to many video call <http://www.kurento.org/docs/current/tutorials.html#tutorial-webrtc-one-to-many-broadcast>`__
+* `One to many video call <http://doc-kurento.readthedocs.org/en/stable/tutorials.html#webrtc-one-to-many-broadcast>`__
   application. This web application consists video broadcasting with WebRTC.
   One peer transmits a video stream and N peers receives it. This web
   application is a videophone (call one to one) based on WebRTC. You can check
@@ -454,13 +454,13 @@ There are another sample applications that can be used to learn how to use the
   and
   `Node.js <https://github.com/Kurento/kurento-tutorial-node/tree/master/kurento-one2many-call>`__.
 
-* `One to one video call <http://www.kurento.org/docs/current/tutorials.html#tutorial-webrtc-one-to-one-video-call>`__.
+* `One to one video call <http://doc-kurento.readthedocs.org/en/stable/tutorials.html#webrtc-one-to-one-video-call>`__.
   You can check out the source code on GitHub for
   `Java <https://github.com/Kurento/kurento-tutorial-java/tree/master/kurento-one2one-call>`__
   and
   `Node.js <https://github.com/Kurento/kurento-tutorial-node/tree/master/kurento-one2one-call>`__.
 
-* `Advanced one to one video call <http://www.kurento.org/docs/current/tutorials.html#tutorial-webrtc-one-to-one-video-call-with-recording-and-filtering>`__
+* `Advanced one to one video call <http://doc-kurento.readthedocs.org/en/stable/tutorials.html#webrtc-one-to-one-video-call-with-recording-and-filtering>`__
   application. This is an enhanced version of the previous application
   recording of the video communication, and also integration with an augmented
   reality filter. You can check out the source code on GitHub for
