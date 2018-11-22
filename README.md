@@ -1,11 +1,16 @@
-[![License badge](https://img.shields.io/badge/license-LGPL-blue.svg)](http://www.gnu.org/licenses/lgpl-2.1.html)
-[![Documentation badge](https://readthedocs.org/projects/fiware-orion/badge/?version=latest)](http://doc-fiware.readthedocs.org/en/latest/)
-[![Docker badge](https://img.shields.io/docker/pulls/fiware/orion.svg)](https://hub.docker.com/r/fiware/stream-oriented-kurento/)
-[![Support badge]( https://img.shields.io/badge/support-sof-yellowgreen.svg)](http://stackoverflow.com/questions/tagged/kurento)
+[![License badge](https://img.shields.io/badge/license-Apache2-orange.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Documentation](https://img.shields.io/readthedocs/kurento.svg)](https://kurento.readthedocs.io/en/latest/)
+[![Docker badge](https://img.shields.io/docker/pulls/fiware/stream-oriented-kurento.svg)](https://hub.docker.com/r/fiware/stream-oriented-kurento/)
+[![Support badge](https://img.shields.io/badge/support-Kurento-yellowgreen.svg?logo=stackoverflow)](http://stackoverflow.com/questions/tagged/kurento)
+
+[![FIWARE Chapter](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/media-streams.svg)](https://www.fiware.org/developers/catalogue/)
+[![FIWARE member status](https://nexus.lab.fiware.org/static/badges/statuses/kurento.svg)](https://www.fiware.org/developers/catalogue/)
+
 
 [![][KurentoImage]][Kurento]
 
-Copyright © 2013-2016 [Kurento]. Licensed under [LGPL v2.1 License].
+Copyright 2018 [Kurento]. Licensed under [Apache 2.0 License].
+
 
 doc-fiware
 ==========
@@ -35,33 +40,53 @@ installation and development guides. A simplified version of the documentation
 can be found on [readthedocs.org]. The [Open API specification] a.k.a. Kurento
 Protocol is also available on [apiary.io].
 
+Useful Links
+------------
+
+Usage:
+
+* [Installation Guide](https://doc-kurento.readthedocs.io/en/stable/user/installation.html)
+* [Compilation Guide](https://doc-kurento.readthedocs.io/en/stable/dev/dev_guide.html#developing-kms)
+* [Contribution Guide](https://doc-kurento.readthedocs.io/en/stable/project/contribute.html)
+
+Issues:
+
+* [Bug Tracker](https://github.com/Kurento/bugtracker/issues)
+* [Support](https://doc-kurento.readthedocs.io/en/stable/user/support.html)
+
+News:
+
+* [Kurento Blog](https://www.kurento.org/blog)
+* [Google Groups](https://groups.google.com/forum/#!forum/kurento)
+
+
+
 Source
 ------
 
-Code for other Kurento projects can be found in the [GitHub Kurento Group].
+All source code belonging to the Kurento project can be found in the [Kurento GitHub organization page].
 
-News and Website
-----------------
+[Kurento GitHub organization page]: https://github.com/Kurento
 
-Check the [Kurento blog]
-Follow us on Twitter @[kurentoms].
 
-Issue tracker
--------------
-
-Issues and bug reports should be posted to the [GitHub Kurento bugtracker]
 
 Licensing and distribution
 --------------------------
 
-Software associated to Kurento is provided as open source under GNU Library or
-"Lesser" General Public License, version 2.1 (LGPL-2.1). Please check the
-specific terms and conditions linked to this open source license at
-http://opensource.org/licenses/LGPL-2.1. Please note that software derived as a
-result of modifying the source code of Kurento software in order to fix a bug
-or incorporate enhancements is considered a derivative work of the product.
-Software that merely uses or aggregates (i.e. links to) an otherwise unmodified
-version of existing software is not considered a derivative work.
+Copyright 2018 Kurento
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
 
 Contribution policy
 -------------------
@@ -95,6 +120,7 @@ Mailing List] and through [StackOverflow] using the tags *kurento* and
 
 Before asking for support, please read first the [Kurento Netiquette Guidelines]
 
+[Apache 2.0 License]: https://www.apache.org/licenses/LICENSE-2.0
 [documentation]: http://www.kurento.org/documentation
 [FIWARE]: http://www.fiware.org
 [GitHub Kurento bugtracker]: https://github.com/Kurento/bugtracker/issues
