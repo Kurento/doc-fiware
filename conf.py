@@ -2,6 +2,17 @@
 #
 # on_rtd is whether we are on readthedocs.org
 import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
+
+sys.path.append(os.path.abspath('extensions'))
+extensions = [
+    'sphinx.ext.graphviz',
+    'sphinx.ext.todo',
+    'wikipedia',
+    'examplecode'
+]
+
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 if not on_rtd:  # only import and set the theme if we're building docs locally
@@ -22,6 +33,7 @@ master_doc = 'index'
 html_context = {
    'css_files': [
       '_static/css/theme.css',
-      'https://fiware.org/style/fiware_readthedocs.css'
+      'https://fiware.org/style/fiware_readthedocs.css',
+      'https://fiware.org/style/fiware_readthedocs_media_streams.css'
    ]
 }
